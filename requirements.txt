@@ -1,2 +1,4 @@
 wordcloud
-python-docx
+# python-docx  # not currently used
+beautifulsoup4
+lxml

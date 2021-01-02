@@ -4,12 +4,7 @@ from typing import Dict, List, Optional
 
 import docx
 
-
-def to_words(text: str) -> List[str]:
-    if text == "":
-        return []
-    filtered = filter(lambda w: w != "-", text.split(' '))
-    return list(map(lambda w: w.strip('.'), filtered))
+from utils import to_words
 
 
 def parse_doc(filename: str) -> Dict[str, List[str]]:
